@@ -6,11 +6,11 @@
 Flux BOOTSTRAP 
 ---------------------------------
 $env:GITHUB_TOKEN="###"
-flux bootstrap github `
-  --owner=dimavard `
-  --repository=infra-repo `
-  --branch=main `
-  --path=./clusters/my-cluster `
+flux bootstrap github
+  --owner=dimavard
+  --repository=infra-repo
+  --branch=main
+  --path=./clusters/my-cluster
   --personal
 ---------------------------------
 
