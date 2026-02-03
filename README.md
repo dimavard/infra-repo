@@ -3,13 +3,20 @@
 Установил Flux посредством chocolatey.
 Сгенерировал GIT-токен
 
-**Flux BOOTSTRAP:**
-$env:GITHUB_TOKEN="ghp_***"
-flux bootstrap github `
- --owner=dimavard `
- --repository=infra-repo `
- --branch=main `
- --path=./clusters/my-cluster `
+Flux BOOTSTRAP:
+
+$env:GITHUB_TOKEN="___"
+
+flux bootstrap github
+
+ --owner=dimavard
+ 
+ --repository=infra-repo
+ 
+ --branch=main
+ 
+ --path=./clusters/my-cluster
+ 
  --personal
 
 ## Как устроены директории?
