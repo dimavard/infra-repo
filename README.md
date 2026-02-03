@@ -6,17 +6,11 @@
 Flux BOOTSTRAP:
 
 $env:GITHUB_TOKEN="___"
-
 flux bootstrap github
-
  --owner=dimavard
- 
  --repository=infra-repo
- 
  --branch=main
- 
  --path=./clusters/my-cluster
- 
  --personal
 
 ## Как устроены директории?
@@ -38,7 +32,7 @@ kubectl port-forward -n podinfo svc/podinfo 8080:80
 Freelens выдал warning в котором было указано на попытку использования несуществующего образа.
 
 kubectl get pods -n podinfo
-# STATUS: ImagePullBackOff
+"STATUS: ImagePullBackOff"
 
 kubectl describe pod -n podinfo -l app=podinfo
 "Events: Failed to pull image "stefanprodan/podinfo:6.6.6": not found"
